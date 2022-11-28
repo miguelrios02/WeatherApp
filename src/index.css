@@ -1,0 +1,71 @@
+
+.App{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://st.depositphotos.com/2208320/2262/v/450/depositphotos_22626841-stock-illustration-vector-weather-icons-collection.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 100vh;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.weatherCard{
+  border:2px solid black;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 20px;
+}
+
+.watherCard-body ul{
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+
+.t-stroke {
+  
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #110e57;
+    -webkit-text-stroke-color: #0d0000;
+  }
+  
+  .t-shadow {
+    text-shadow: 7px 7px #ffffff;
+  }
+  
+.img-weather{
+animation: animationImag infinite 5s;
+}
+
+@keyframes animationImag{
+  0%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+
+}
+@media (min-width: 750px){
+.watherCard-body{
+  display: flex;
+  
+}
+.watherCard-body ul{
+  text-align: left;
+  padding: 3rem 0rem 3rem 2rem;
+}
+}
+
