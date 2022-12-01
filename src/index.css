@@ -3,21 +3,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url("https://st.depositphotos.com/2208320/2262/v/450/depositphotos_22626841-stock-illustration-vector-weather-icons-collection.jpg");
+  background-image: url("/src/assets/background.png");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
   height: 100vh;
   align-items: center;
   font-family: sans-serif;
+  text-shadow: 2px -2px 3px rgba(255, 255, 255, 0.7);
+  
 }
 
 .weatherCard{
-  border:2px solid black;
+  font-size: 1rem;
+  border:0.5px solid #0D6EFD;
   padding: 2rem 2rem 2rem 2rem;
   text-align: center;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(7, 0, 209, 0.15);
   border-radius: 20px;
+  box-shadow:  20px -15px 40px   rgba(0, 0, 0, 0.3);
 }
 
 .watherCard-body ul{
@@ -27,7 +31,22 @@
   padding: 0;
   text-transform: capitalize;
 }
+button{
+  box-shadow: 5px -5px 9px rgba(255, 255, 255, 0.7);
+}
+.weatherCard p{
+margin: 0;
 
+}
+.weatherCard li{
+  display: flex;
+  font-weight: 200;
+  
+}
+.weatherCard .item{
+  font-weight: 600;
+  color: #0D6EFD;
+  }
 
 .t-stroke {
   
@@ -35,13 +54,25 @@
     -moz-text-stroke-width: 2px;
     -webkit-text-stroke-width: 2px;
     -moz-text-stroke-color: #110e57;
-    -webkit-text-stroke-color: #0d0000;
+    -webkit-text-stroke-color: #0D6EFD;
+  }
+  .t-stroke-temp {
+    padding: 1rem;
+    font-size: 2rem;
+    color: transparent;
+    -moz-text-stroke-width: 2.5px;
+    -webkit-text-stroke-width: 2.3px;
+    -moz-text-stroke-color: #110e57;
+    -webkit-text-stroke-color: #0D6EFD;
   }
   
   .t-shadow {
-    text-shadow: 7px 7px #ffffff;
+    text-shadow: 6px -6px 2px rgba(255, 255, 255, 0.7);
   }
-  
+  .t-shadow-temp {
+    text-shadow: 5px -5px 2px rgba(255, 255, 255, 0.7);
+  }
+
 .img-weather{
 animation: animationImag infinite 5s;
 }

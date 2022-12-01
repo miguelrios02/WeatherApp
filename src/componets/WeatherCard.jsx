@@ -12,13 +12,13 @@ const WeatherCard = ({ weather,temperature,isCelsius,changeUnitTemperature }) =>
             />
         </div>
         <ul>
-          <li>{weather.weather[0].description}</li>
-          <li>Wind speed: {weather.wind.speed} m/s</li>
-          <li>Clouds: {weather.clouds.all} %</li>
-          <li>Pressure: {weather.main.pressure} hPa</li>
+          <li><strong><p className="item">{weather.weather[0].description}</p></strong></li>
+          <li><p className="item">Wind speed:</p> <em>{weather.wind.speed} m/s</em> </li>
+          <li><p className="item">Clouds: </p> <em>{weather.clouds.all} %</em></li>
+          <li><p className="item">Pressure:</p>  <em>{weather.main.pressure} hPa</em></li>
         </ul>
       </section>
-      <p>{isCelsius ? `${temperature.celsius} °C`:`${temperature.fahrenheit} °F`}</p>
+      <p className="t-stroke-temp t-shadow-temp ">{isCelsius ? `${temperature.celsius} °C`:`${temperature.fahrenheit} °F`}</p>
       <button type="button" className="btn btn-primary btn-lg" onClick={changeUnitTemperature}>Degrees °F/°C</button>
     </article>
   );
